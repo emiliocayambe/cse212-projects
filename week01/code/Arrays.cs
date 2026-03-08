@@ -14,16 +14,17 @@ public static class Arrays
         // be implemented by another person.
 
         // Step 1: Create an array of doubles with the size of 'length'.
+        double[] result = new double[length];
+
         // Step 2: Use a loop to fill the array with multiples of 'number'.
         //         - For each index i in the array, calculate the multiple as number * (i + 1) and assign it to the array at index i.
-        // Step 3: Return the filled array.
 
-        double[] result = new double[length];
         for (int i = 0; i < length; i++)
         {
             result[i] = number * (i + 1);
         }
 
+        // Step 3: Return the filled array.
 
         return result; // replace this return statement with your own
     }
